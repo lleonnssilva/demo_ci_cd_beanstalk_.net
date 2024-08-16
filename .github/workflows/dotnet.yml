@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '8.0'  # Versão do .NET que você está usando
 
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore ./publish
 
       - name: Build
         run: dotnet build --configuration Release
