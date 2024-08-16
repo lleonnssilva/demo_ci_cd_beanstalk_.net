@@ -1,54 +1,47 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: Deploy AWS
+name: Deploy to AWS Elastic Beanstalk
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # Ou qualquer branch que você deseja usar para deploy
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-        
-    - name: Install dependencies
-      run: dotnet restore
-      
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-      
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
-      
-    - name: Publish
-      run: dotnet publish -c Release -o '${{ github.workspace }}/out' 
-    
-    - name: Zip Package
-      run: |
-        cd ${{ github.workspace }}/out
-        zip -r ${{ github.workspace }}/out.zip *
-        
-    - name: Deploy EB
-      uses: einaregilsson/beanstalk-deploy@v4
-      with: 
-         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         application_name: app-netcore
-         environment_name: app-core-dev
-         region: us-east-1
-         version_label: ${{ github.run_id }}
-         version_description: ${{ github.sha }}
-         deployment_package: ${{ github.workspace }}/out.zip
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'  # Versão do .NET que você está usando
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release
+
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./publish
+
+      - name: Deploy to AWS Elastic Beanstalk
+        uses: aws-actions/elastic-beanstalk-deploy@v1
+        with:
+          application-name: app-netcore  # Nome da aplicação no Elastic Beanstalk
+          environment-name: app-core-dev  # Nome do ambiente no Elastic Beanstalk
+          version-label: ${{ github.sha }}  # Usando o SHA do commit como rótulo de versão
+          region: us-east-1  # Região da AWS onde seu Elastic Beanstalk está configurado
+          deployment-package: ./publish
+
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
 
 
