@@ -32,7 +32,7 @@ jobs:
         run: dotnet publish path/to/your.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
 
       - name: Setup AWS CLI
-        uses: aws-actions/setup-aws-cli@v2
+        uses: einaregilsson/beanstalk-deploy@v22
         with:
           aws-version: '2.x'
 
