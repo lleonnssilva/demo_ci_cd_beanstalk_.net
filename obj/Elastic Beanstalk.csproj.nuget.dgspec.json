@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\Elastic Beanstalk\\Elastic Beanstalk.csproj": {}
+    "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\Elastic Beanstalk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\Elastic Beanstalk\\Elastic Beanstalk.csproj": {
+    "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\Elastic Beanstalk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\Elastic Beanstalk\\Elastic Beanstalk.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\Elastic Beanstalk.csproj",
         "projectName": "Elastic Beanstalk",
-        "projectPath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\Elastic Beanstalk\\Elastic Beanstalk.csproj",
+        "projectPath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\Elastic Beanstalk.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\Elastic Beanstalk\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
