@@ -1,0 +1,30 @@
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\appsettings.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.staticwebassets.runtime.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.exe
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.deps.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.runtimeconfig.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.dll
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\bin\Debug\net8.0\Elastic Beanstalk.pdb
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.RazorAssemblyInfo.cache
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.RazorAssemblyInfo.cs
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets\msbuild.Elastic Beanstalk.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets\msbuild.build.Elastic Beanstalk.props
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Elastic Beanstalk.props
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Elastic Beanstalk.props
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\scopedcss\bundle\Elastic Beanstalk.styles.css
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\scopedcss\projectbundle\Elastic Beanstalk.bundle.scp.css
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.dll
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\refint\Elastic Beanstalk.dll
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.pdb
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\Elastic Beanstalk.genruntimeconfig.cache
+C:\Users\Leonardo\Desktop\Formacao AWS\Conteudo.NET\Elastic Beanstalk\obj\Debug\net8.0\ref\Elastic Beanstalk.dll
