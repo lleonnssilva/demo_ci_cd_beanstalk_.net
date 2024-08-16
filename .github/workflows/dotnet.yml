@@ -31,7 +31,7 @@ jobs:
         run: dotnet publish --configuration Release --output ./publish
 
       - name: Deploy to AWS Elastic Beanstalk
-        uses: aws-actions/elastic-beanstalk-deploy@v1
+        uses: einaregilsson/beanstalk-deploy@v22
         with:
           application-name: app-netcore  # Nome da aplicação no Elastic Beanstalk
           environment-name: app-core-dev  # Nome do ambiente no Elastic Beanstalk
