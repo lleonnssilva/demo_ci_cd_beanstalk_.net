@@ -20,16 +20,15 @@ jobs:
           application-name: app-netcore  # Nome da aplicação no Elastic Beanstalk
           environment-name: app-core-dev  # Nome do ambiente no Elastic Beanstalk
       - name: Install dependencies
-        run: dotnet restore path/to/your.sln  # Substitua pelo caminho correto para o arquivo .sln ou .csproj
-
+        run: dotnet restore ./Elastic_Beanstalk.sln
       - name: Build
-        run: dotnet build path/to/your.sln --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
+        run: dotnet build ./Elastic_Beanstalk.sln --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
 
       - name: Test
-        run: dotnet test path/to/your.sln --no-build --verbosity normal  # Substitua pelo caminho correto para o arquivo .sln
+        run: dotnet ./Elastic_Beanstalk.sln --no-build --verbosity normal  # Substitua pelo caminho correto para o arquivo .sln
 
       - name: Publish
-        run: dotnet publish path/to/your.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
+        run: dotnet publish ./Elastic_Beanstalk.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
 
       - name: Setup AWS CLI
         uses: einaregilsson/beanstalk-deploy@v22
