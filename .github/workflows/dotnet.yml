@@ -32,7 +32,7 @@ jobs:
         run: dotnet publish ${{ github.workspace }}/elastic_beanstalk_dotnet.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
 
       - name: Setup AWS CLI
-        uses: lleonnssilva/demo_ci_cd_beanstalk@v3
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-version: '2.x'
 
