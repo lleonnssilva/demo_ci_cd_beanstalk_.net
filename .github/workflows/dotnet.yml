@@ -23,13 +23,13 @@ jobs:
         run: dotnet restore ${{ github.workspace }}/elastic_beanstalk_dotnet.csproj
         
       - name: Build
-        run: dotnet build ${{ github.workspace }}/demo_ci_cd_beanstalk_.net/elastic_beanstalk_dotnet.csproj --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
+        run: dotnet build ${{ github.workspace }}/elastic_beanstalk_dotnet.csproj --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
 
       - name: Test
-        run: dotnet .${{ github.workspace }}/demo_ci_cd_beanstalk_.net/elastic_beanstalk_dotnet.csproj --no-build --verbosity normal  # Substitua pelo caminho correto para o arquivo .sln
+        run: dotnet .${{ github.workspace }}/elastic_beanstalk_dotnet.csproj --no-build --verbosity normal  # Substitua pelo caminho correto para o arquivo .sln
 
       - name: Publish
-        run: dotnet publish ${{ github.workspace }}/demo_ci_cd_beanstalk_.net/elastic_beanstalk_dotnet.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
+        run: dotnet publish ${{ github.workspace }}/elastic_beanstalk_dotnet.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
 
       - name: Setup AWS CLI
         uses: einaregilsson/beanstalk-deploy@v22
