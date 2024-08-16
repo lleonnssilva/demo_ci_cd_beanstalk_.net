@@ -20,7 +20,8 @@ jobs:
           application-name: app-netcore  # Nome da aplicação no Elastic Beanstalk
           environment-name: app-core-dev  # Nome do ambiente no Elastic Beanstalk
       - name: Install dependencies
-        run: dotnet restore ./src/Elastic_Beanstalk/Elastic_Beanstalk.sln
+        run: dotnet restore ${{ github.workspace }}/Elastic_Beanstalk.sln
+        
       - name: Build
         run: dotnet build ./Elastic_Beanstalk.sln --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
 
