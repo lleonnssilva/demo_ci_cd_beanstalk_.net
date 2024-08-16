@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elastic Beanstalk", "Elastic Beanstalk.csproj", "{CDBD96BC-F864-4B4A-ADEA-7C2772EB899A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "elastic_beanstalk_dotnet", "elastic_beanstalk_dotnet.csproj", "{5691B7D0-8ABB-4DA1-9E33-9CB42D83CEEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CDBD96BC-F864-4B4A-ADEA-7C2772EB899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDBD96BC-F864-4B4A-ADEA-7C2772EB899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDBD96BC-F864-4B4A-ADEA-7C2772EB899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDBD96BC-F864-4B4A-ADEA-7C2772EB899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5691B7D0-8ABB-4DA1-9E33-9CB42D83CEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5691B7D0-8ABB-4DA1-9E33-9CB42D83CEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5691B7D0-8ABB-4DA1-9E33-9CB42D83CEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5691B7D0-8ABB-4DA1-9E33-9CB42D83CEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {60AF0A52-7E42-439B-87B8-D8F3FB5851B8}
+		SolutionGuid = {E54A9169-1F0C-4C91-93C1-FF4C338CDB7A}
 	EndGlobalSection
 EndGlobal

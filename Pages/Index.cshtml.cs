@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Elastic_Beanstalk.Pages;
+namespace elastic_beanstalk_dotnet.Pages;
 
 public class IndexModel : PageModel
 {

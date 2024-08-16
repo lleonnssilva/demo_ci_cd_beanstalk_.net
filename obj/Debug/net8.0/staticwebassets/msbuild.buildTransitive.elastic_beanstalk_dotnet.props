@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\elastic_beanstalk_dotnet.props" />
+</Project>

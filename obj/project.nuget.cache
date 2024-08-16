@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yqmtKy4EDwo26y+uMU0IF4QyppLYT0E7gmPJBu3AgiCTYVhu23fdCubc2kPCe4eCcxWT/Lzi9Fk+cPCllDszwg==",
+  "dgSpecHash": "Uja0q26JvSAWMsIV36+aJLmqSGzcHuI1+CUB+TuxNxQElZ89Dx7jEf48Nu4BgOjf9WbC9Ht1EVNo6dJAmQFxUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\demo_ci_cd_beanstalk_.net\\Elastic Beanstalk.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\Formacao AWS\\Conteudo.NET\\elastic_beanstalk_dotnet\\elastic_beanstalk_dotnet.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

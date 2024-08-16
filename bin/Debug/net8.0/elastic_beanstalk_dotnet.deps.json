@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Elastic Beanstalk/1.0.0": {
+      "elastic_beanstalk_dotnet/1.0.0": {
         "runtime": {
-          "Elastic Beanstalk.dll": {}
+          "elastic_beanstalk_dotnet.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Elastic Beanstalk/1.0.0": {
+    "elastic_beanstalk_dotnet/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
