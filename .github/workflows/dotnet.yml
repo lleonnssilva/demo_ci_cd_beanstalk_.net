@@ -3,7 +3,7 @@ name: Deploy to AWS Elastic Beanstalk
 on:
   push:
     branches:
-      - main  # Ou qualquer branch que você deseja usar para deploy
+      - main  # Ou a branch que você deseja usar para o deploy
 
 jobs:
   build:
@@ -13,32 +13,51 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup .NET
+      - name: Setup .NET 8
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0'  # Versão do .NET que você está usando
-
-      - name: Build
-        run: dotnet build --configuration Release
-
-      - name: Test
-        run: dotnet test --no-build --verbosity normal
-
-      - name: Publish
-        run: dotnet publish --configuration Release --output ./publish
-
-      - name: Deploy to AWS Elastic Beanstalk
-        uses: einaregilsson/beanstalk-deploy@v22
-        with:
+          dotnet-version: '8.x'  # Certifique-se de usar a versão correta do .NET
           application-name: app-netcore  # Nome da aplicação no Elastic Beanstalk
           environment-name: app-core-dev  # Nome do ambiente no Elastic Beanstalk
-          version-label: ${{ github.sha }}  # Usando o SHA do commit como rótulo de versão
-          region: us-east-1  # Região da AWS onde seu Elastic Beanstalk está configurado
-          deployment-package: ./publish
+      - name: Install dependencies
+        run: dotnet restore path/to/your.sln  # Substitua pelo caminho correto para o arquivo .sln ou .csproj
 
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Build
+        run: dotnet build path/to/your.sln --configuration Release  # Substitua pelo caminho correto para o arquivo .sln
+
+      - name: Test
+        run: dotnet test path/to/your.sln --no-build --verbosity normal  # Substitua pelo caminho correto para o arquivo .sln
+
+      - name: Publish
+        run: dotnet publish path/to/your.csproj --configuration Release --output ./publish  # Substitua pelo caminho correto para o arquivo .csproj
+
+      - name: Setup AWS CLI
+        uses: aws-actions/setup-aws-cli@v2
+        with:
+          aws-version: '2.x'
+
+      - name: Deploy to Elastic Beanstalk
+        run: |
+          # Compacta o pacote de publicação
+          zip -r deployment-package.zip ./publish
+          
+          # Envia o pacote para o bucket S3
+          aws s3 cp deployment-package.zip s3://$BUCKET_NAME/deployment-package.zip
+          
+          # Cria uma nova versão da aplicação no Elastic Beanstalk
+          aws elasticbeanstalk create-application-version --application-name my-app \
+            --version-label ${{ github.sha }} \
+            --source-bundle S3Bucket=$BUCKET_NAME,S3Key=deployment-package.zip
+
+          # Atualiza o ambiente do Elastic Beanstalk para usar a nova versão
+          aws elasticbeanstalk update-environment --environment-name my-app-env \
+            --version-label ${{ github.sha }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}  # Adicione este secret se necessário
+          BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}  # Nome do bucket S3 para upload
+
 
 
 
