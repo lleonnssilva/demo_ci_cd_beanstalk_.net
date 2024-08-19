@@ -51,7 +51,7 @@ jobs:
             --version-label ${{ github.sha }} \
             --source-bundle S3Bucket=$BUCKET_NAME,S3Key=deployment-package.zip
 
-          # Atualiza o ambiente do Elastic Beanstalk para usar a nova versão
+          # Atualiza o ambiente do Elastic Beanstalk para usar a nova versão 
           aws elasticbeanstalk update-environment --environment-name app-core-dev \
             --version-label ${{ github.sha }}
         env:
